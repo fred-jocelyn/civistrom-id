@@ -1,0 +1,22 @@
+# Environnement
+.env
+.env.local
+
+# Storage
+storage/logs/*
+!storage/logs/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# IDE
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# MAMP
+index.py

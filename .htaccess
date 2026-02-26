@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Laisser passer les fichiers statiques dans public/
+    RewriteCond %{REQUEST_URI} ^/public/assets/ [NC]
+    RewriteRule ^ - [L]
+
+    # Tout le reste → public/index.php
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ public/index.php [QSA,L]
+</IfModule>
