@@ -22,7 +22,7 @@
 set -euo pipefail
 
 DEPLOY_DIR="/var/www/civistrom-id"
-DOMAIN="id.civistrom.ai"
+DOMAIN="civistromid.civistrom.ai"
 
 # Couleurs
 GREEN='\033[0;32m'
@@ -85,7 +85,7 @@ cat > /etc/nginx/sites-available/id-temp.conf << 'TEMPNGINX'
 server {
     listen 80;
     listen [::]:80;
-    server_name id.civistrom.ai;
+    server_name civistromid.civistrom.ai;
     root /var/www/civistrom-id/public;
     index index.php;
 

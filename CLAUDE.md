@@ -121,7 +121,7 @@ CIVISTROM-ID/
 
 ## Production
 
-- **URL** : `https://id.civistrom.ai`
+- **URL** : `https://civistromid.civistrom.ai`
 - **VPS** : 51.79.70.186 (OVH, Ubuntu 24.04)
 - **Deploy** : rsync + `sudo bash deploy/setup-production.sh`
 - **Nginx** : document root = `public/`, pool FPM `[id]`
